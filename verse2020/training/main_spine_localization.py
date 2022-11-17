@@ -211,7 +211,7 @@ class MainLoop(MainLoopBase):
         print('Image', image.shape)
         with tf.GradientTape() as tape:
             _, losses = self.call_model_and_loss(image, target_landmarks, training=True)
-            print(losses.eval())
+            print(losses)
             if self.reg_constant > 0:
                 losses['loss_reg'] = self.reg_constant * tf.reduce_sum(self.model.losses)
             loss = tf.reduce_sum(list(losses.values()))
