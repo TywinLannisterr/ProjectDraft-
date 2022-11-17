@@ -58,9 +58,9 @@ class MainLoop(MainLoopBase):
             self.network = Unet
         self.clip_gradient_global_norm = 100000.0
 
-        self.use_pyro_dataset = True
+        self.use_pyro_dataset = False
         self.save_output_images = True
-        self.save_debug_images = True
+        self.save_debug_images = False
         self.has_validation_groundtruth = cv in [0, 1, 2]
         self.local_base_folder = '../verse2020_dataset'
         self.image_size = [None, None, None]
@@ -207,11 +207,10 @@ class MainLoop(MainLoopBase):
         Perform a training step.
         """
         image, target_landmarks, image_id = self.dataset_train_iter.get_next()
-        print('image_id', image_id)
-        print('Image', image.shape)
+
         with tf.GradientTape() as tape:
             _, losses = self.call_model_and_loss(image, target_landmarks, training=True)
-            print(losses)
+            tf.print(losses)
             if self.reg_constant > 0:
                 losses['loss_reg'] = self.reg_constant * tf.reduce_sum(self.model.losses)
             loss = tf.reduce_sum(list(losses.values()))
@@ -236,7 +235,7 @@ class MainLoop(MainLoopBase):
         self.optimizer.apply_gradients(zip(grads, variables))
 
         self.loss_metric_logger_train.update_metrics(metric_dict)
-        print('here')
+        
 
     def test_full_image(self, dataset_entry):
         """
