@@ -58,7 +58,7 @@ class MainLoop(MainLoopBase):
             self.network = Unet
         self.clip_gradient_global_norm = 100000.0
 
-        self.use_pyro_dataset = False
+        self.use_pyro_dataset = True
         self.save_output_images = True
         self.save_debug_images = False
         self.has_validation_groundtruth = cv in [0, 1, 2]
@@ -210,7 +210,6 @@ class MainLoop(MainLoopBase):
 
         with tf.GradientTape() as tape:
             _, losses = self.call_model_and_loss(image, target_landmarks, training=True)
-            tf.print(losses)
             if self.reg_constant > 0:
                 losses['loss_reg'] = self.reg_constant * tf.reduce_sum(self.model.losses)
             loss = tf.reduce_sum(list(losses.values()))
