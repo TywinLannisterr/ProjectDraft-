@@ -60,7 +60,7 @@ class MainLoop(MainLoopBase):
 
         self.use_pyro_dataset = True
         self.save_output_images = True
-        self.save_debug_images = False
+        self.save_debug_images = True
         self.has_validation_groundtruth = cv in [0, 1, 2]
         self.local_base_folder = '../verse2020_dataset'
         self.image_size = [None, None, None]
@@ -136,6 +136,7 @@ class MainLoop(MainLoopBase):
             print('using pyro uri', uri)
             try:
                 self.dataset_train = PyroClientDataset(uri, **dataset_parameters)
+
             except Exception as e:
                 print('Error connecting to server dataset. Start server_dataset_loop.py and set correct hostname, or set self.use_pyro_dataset = False.')
                 raise e
@@ -206,8 +207,11 @@ class MainLoop(MainLoopBase):
         Perform a training step.
         """
         image, target_landmarks, image_id = self.dataset_train_iter.get_next()
+        print('image_id', image_id)
+        print('Image', image.shape)
         with tf.GradientTape() as tape:
             _, losses = self.call_model_and_loss(image, target_landmarks, training=True)
+            print(losses)
             if self.reg_constant > 0:
                 losses['loss_reg'] = self.reg_constant * tf.reduce_sum(self.model.losses)
             loss = tf.reduce_sum(list(losses.values()))
