@@ -150,7 +150,7 @@ class MainLoop(MainLoopBase):
         if self.use_pyro_dataset:
             # TODO: adapt hostname, in case this script runs on a remote server
             hostname = socket.gethostname()
-            server_name = '@' + "s83.uppmax.uu.se" + ':52132'
+            server_name = '@' + "s146.uppmax.uu.se" + ':52132'
             uri = 'PYRO:verse2020_dataset' + server_name
             print('using pyro uri', uri)
             try:
