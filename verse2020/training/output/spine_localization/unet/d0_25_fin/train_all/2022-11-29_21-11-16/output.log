@@ -1,0 +1,344 @@
+using pyro uri PYRO:verse2020_dataset@s146.uppmax.uu.se:52132
+loaded 113 ids
+loaded 113 ids
+Starting main loop
+Training parameters:
+Optimizer:  <tensorflow.python.keras.mixed_precision.experimental.loss_scale_optimizer.LossScaleOptimizer object at 0x2b702b12d940>
+Batch size: 1
+Learning rate: <tensorflow.python.keras.optimizer_v2.learning_rate_schedule.ExponentialDecay object at 0x2b702b12d898>
+Max iterations: 10000
+Output folder: ./output/spine_localization/unet/d0_25_fin/train_all/2022-11-29_21-11-16
+21:11:34: train iter: 0 loss_net: 0.3986 loss_scale: 32768.0000 norm: 4.4705 norm_average: 9.9447 seconds: 16.018
+21:11:52: train iter: 100 loss_net: 0.6168 loss_scale: 1106.5601 norm: inf norm_average: 20.7086 seconds: 17.792
+21:12:14: train iter: 200 loss_net: 0.4926 loss_scale: 64.0000 norm: 70.4818 norm_average: 31.3028 seconds: 21.747
+21:12:35: train iter: 300 loss_net: 0.5383 loss_scale: 64.0000 norm: 49.0427 norm_average: 37.5945 seconds: 21.440
+21:12:55: train iter: 400 loss_net: 0.4107 loss_scale: 64.0000 norm: 66.3767 norm_average: 37.7160 seconds: 20.339
+21:13:14: train iter: 500 loss_net: 0.3364 loss_scale: 64.0000 norm: 52.6594 norm_average: 36.7030 seconds: 18.776
+21:13:32: train iter: 600 loss_net: nan loss_scale: 40.0000 norm: nan norm_average: 34.1848 seconds: 18.339
+21:13:50: train iter: 700 loss_net: 0.2018 loss_scale: 32.0000 norm: 32.4931 norm_average: 32.5853 seconds: 17.946
+21:14:14: train iter: 800 loss_net: 0.1584 loss_scale: 32.0000 norm: 23.0525 norm_average: 28.7623 seconds: 23.452
+21:14:35: train iter: 900 loss_net: 0.1643 loss_scale: 32.0000 norm: 28.5452 norm_average: 26.0062 seconds: 21.587
+21:14:58: train iter: 1000 loss_net: 0.1446 loss_scale: 32.0000 norm: 21.6569 norm_average: 24.2958 seconds: 22.735
+21:15:17: train iter: 1100 loss_net: 0.1224 loss_scale: 32.0000 norm: 17.4979 norm_average: 21.3334 seconds: 18.746
+21:15:37: train iter: 1200 loss_net: 0.1135 loss_scale: 32.0000 norm: 17.1775 norm_average: 17.9715 seconds: 20.387
+21:16:01: train iter: 1300 loss_net: 0.1134 loss_scale: 32.0000 norm: 19.8120 norm_average: 18.9332 seconds: 23.357
+21:16:21: train iter: 1400 loss_net: nan loss_scale: 16.4800 norm: nan norm_average: 17.7390 seconds: 20.061
+21:16:40: train iter: 1500 loss_net: 0.0732 loss_scale: 16.0000 norm: 15.5665 norm_average: 16.9629 seconds: 19.185
+21:17:02: train iter: 1600 loss_net: 0.0828 loss_scale: 16.0000 norm: 13.6951 norm_average: 15.0564 seconds: 21.919
+21:17:23: train iter: 1700 loss_net: 0.0771 loss_scale: 16.0000 norm: 13.3998 norm_average: 14.0758 seconds: 21.286
+21:17:44: train iter: 1800 loss_net: 0.0846 loss_scale: 16.0000 norm: 14.4106 norm_average: 13.3108 seconds: 20.442
+21:18:03: train iter: 1900 loss_net: 0.0766 loss_scale: 16.0000 norm: 12.7148 norm_average: 13.5106 seconds: 19.293
+21:18:22: train iter: 2000 loss_net: 0.0670 loss_scale: 16.0000 norm: 12.3347 norm_average: 12.3760 seconds: 19.178
+21:18:46: train iter: 2100 loss_net: 0.0594 loss_scale: 16.0000 norm: 10.8188 norm_average: 11.9716 seconds: 23.461
+21:19:08: train iter: 2200 loss_net: 0.0584 loss_scale: 16.0000 norm: 10.3805 norm_average: 11.3058 seconds: 22.358
+21:19:28: train iter: 2300 loss_net: 0.0483 loss_scale: 16.0000 norm: 9.1488 norm_average: 9.9667 seconds: 20.256
+21:19:48: train iter: 2400 loss_net: 0.0586 loss_scale: 31.5200 norm: 10.1814 norm_average: 10.0166 seconds: 20.106
+21:20:06: train iter: 2500 loss_net: 0.0744 loss_scale: 32.0000 norm: 13.8437 norm_average: 10.9100 seconds: 18.020
+21:20:29: train iter: 2600 loss_net: 0.0511 loss_scale: 32.0000 norm: 8.4264 norm_average: 11.4934 seconds: 22.527
+21:20:50: train iter: 2700 loss_net: nan loss_scale: 31.0400 norm: nan norm_average: 9.0035 seconds: 21.327
+21:21:11: train iter: 2800 loss_net: 0.0621 loss_scale: 16.0000 norm: 10.6264 norm_average: 9.4228 seconds: 21.052
+21:21:31: train iter: 2900 loss_net: 0.0533 loss_scale: 16.0000 norm: 10.4152 norm_average: 9.9922 seconds: 20.078
+21:21:51: train iter: 3000 loss_net: 0.0447 loss_scale: 16.0000 norm: 8.6272 norm_average: 9.1774 seconds: 19.432
+21:22:13: train iter: 3100 loss_net: 0.0408 loss_scale: 16.0000 norm: 8.3870 norm_average: 8.9009 seconds: 22.651
+21:22:36: train iter: 3200 loss_net: 0.0618 loss_scale: 16.0000 norm: 11.9700 norm_average: 10.3083 seconds: 22.792
+21:22:56: train iter: 3300 loss_net: 0.0437 loss_scale: 16.0000 norm: 7.8825 norm_average: 9.3299 seconds: 19.962
+21:23:14: train iter: 3400 loss_net: 0.0445 loss_scale: 16.0000 norm: 7.7133 norm_average: 8.3180 seconds: 18.292
+21:23:36: train iter: 3500 loss_net: 0.0500 loss_scale: 16.0000 norm: 8.9279 norm_average: 8.4996 seconds: 21.721
+21:23:58: train iter: 3600 loss_net: 0.0542 loss_scale: 16.0000 norm: 10.0404 norm_average: 8.9105 seconds: 21.889
+21:24:18: train iter: 3700 loss_net: 0.0395 loss_scale: 16.9600 norm: 7.9891 norm_average: 8.9995 seconds: 19.664
+21:24:38: train iter: 3800 loss_net: nan loss_scale: 17.4400 norm: nan norm_average: 8.7121 seconds: 20.210
+21:24:59: train iter: 3900 loss_net: 0.0530 loss_scale: 16.0000 norm: 10.2317 norm_average: 9.7684 seconds: 20.929
+21:25:17: train iter: 4000 loss_net: 0.0491 loss_scale: 16.0000 norm: 8.1475 norm_average: 9.4704 seconds: 18.493
+21:25:38: train iter: 4100 loss_net: 0.0418 loss_scale: 16.0000 norm: 7.9074 norm_average: 8.4849 seconds: 20.829
+21:25:58: train iter: 4200 loss_net: 0.0353 loss_scale: 16.0000 norm: 6.0016 norm_average: 7.0512 seconds: 19.475
+21:26:18: train iter: 4300 loss_net: 0.0344 loss_scale: 16.0000 norm: 7.1273 norm_average: 6.8397 seconds: 20.656
+21:26:39: train iter: 4400 loss_net: 0.0363 loss_scale: 16.0000 norm: 6.0241 norm_average: 6.5914 seconds: 21.114
+21:27:02: train iter: 4500 loss_net: 0.0415 loss_scale: 16.0000 norm: 6.2182 norm_average: 6.0431 seconds: 22.288
+21:27:24: train iter: 4600 loss_net: 0.0381 loss_scale: 16.0000 norm: 7.2023 norm_average: 6.6696 seconds: 22.464
+21:27:46: train iter: 4700 loss_net: 0.0332 loss_scale: 16.0000 norm: 6.7664 norm_average: 6.9429 seconds: 21.901
+21:28:07: train iter: 4800 loss_net: 0.0414 loss_scale: 30.5600 norm: 7.6562 norm_average: 7.1525 seconds: 21.143
+21:28:29: train iter: 4900 loss_net: 0.0319 loss_scale: 32.0000 norm: 5.7793 norm_average: 6.6108 seconds: 22.154
+Creating snapshot...
+Model saved in file ./output/spine_localization/unet/d0_25_fin/train_all/2022-11-29_21-11-16/weights/ckpt-5000
+Testing...
+GL003
+GL016
+GL047
+GL090_CT-ax
+GL124_CT-ax
+GL240_CT-ax
+GL247
+GL295_CT-ax
+GL364_CT-ax
+GL453_CT-ax
+verse004
+verse005
+verse008
+verse015
+verse031
+verse033
+verse034
+verse056
+verse075
+verse082_CT-iso
+verse088
+verse091
+verse096
+verse097
+verse104_CT-iso
+verse111
+verse112_CT-iso
+verse113
+verse122
+verse127
+verse135
+verse139
+verse141
+verse145
+verse151
+verse254
+verse257
+verse401_verse201_CT-iso
+verse401_verse253_CT-iso
+verse402_verse202_CT-sag
+verse402_verse251_CT-sag
+verse403_verse208_CT-sag
+verse403_verse255_CT-sag
+verse405_verse212_CT-sag
+verse405_verse258_CT-sag
+verse405_verse259_CT-sag
+verse406_verse214_CT-sag
+verse406_verse261_CT-sag
+verse407_verse215_CT-sag
+verse407_verse262_CT-sag
+verse408_verse223_CT-iso
+verse408_verse265_CT-iso
+verse409_verse226_CT-iso
+verse409_verse266_CT-iso
+verse410_verse227_CT-iso
+verse410_verse267_CT-iso
+verse411_verse232_CT-iso
+verse411_verse270_CT-iso
+verse413_verse239_CT-iso
+verse413_verse272_CT-iso
+verse415_verse243_CT-sag
+verse415_verse275_CT-sag
+verse500
+verse503
+verse504
+verse506_CT-iso
+verse507
+verse510_CT-iso
+verse514
+verse518
+verse519_CT-iso
+verse521
+verse525
+verse527
+verse532
+verse533
+verse534
+verse535
+verse536
+verse537
+verse539_CT-iso
+verse541
+verse542_CT-iso
+verse544
+verse557
+verse561_CT-sag
+verse564_CT-iso
+verse565_CT-iso
+verse577_CT-iso
+verse581_CT-iso
+verse584
+verse586_CT-iso
+verse588_CT-sag
+verse593_CT-sag
+verse594
+verse596_CT-iso
+verse605_CT-sag
+verse619_CT-iso
+verse629_CT-iso
+verse631_CT-sag
+verse641_CT-iso
+verse642_CT-sag
+verse646_CT-iso
+verse807_CT-iso
+verse808_CT-iso
+verse811_CT-ax
+verse818_CT-iso
+verse820_CT-iso
+verse823_CT-iso
+verse824_CT-iso
+verse825_CT-iso
+verse833_CT-ax
+verse835_CT-iso
+21:33:21: test iter: 5000 seconds: 1323.424
+21:33:22: train iter: 5000 loss_net: 0.0294 loss_scale: 32.0000 norm: 5.3915 norm_average: 5.9897 seconds: 292.507
+21:33:40: train iter: 5100 loss_net: 0.0350 loss_scale: 32.0000 norm: 5.8359 norm_average: 5.6054 seconds: 17.758
+21:33:56: train iter: 5200 loss_net: 0.0306 loss_scale: 32.0000 norm: 5.9240 norm_average: 5.9038 seconds: 16.580
+21:34:15: train iter: 5300 loss_net: 0.0325 loss_scale: 32.0000 norm: 5.3595 norm_average: 5.7006 seconds: 19.182
+21:34:36: train iter: 5400 loss_net: 0.0314 loss_scale: 32.0000 norm: 6.1202 norm_average: 5.7152 seconds: 20.302
+21:34:56: train iter: 5500 loss_net: 0.0276 loss_scale: 32.0000 norm: 4.7981 norm_average: 5.4438 seconds: 19.880
+21:35:17: train iter: 5600 loss_net: 0.0390 loss_scale: 32.0000 norm: 6.6929 norm_average: 5.4332 seconds: 21.519
+21:35:37: train iter: 5700 loss_net: 0.0273 loss_scale: 32.0000 norm: 4.6490 norm_average: 5.5004 seconds: 19.819
+21:35:56: train iter: 5800 loss_net: 0.0420 loss_scale: 61.1200 norm: 7.0641 norm_average: 5.8768 seconds: 19.141
+21:36:21: train iter: 5900 loss_net: 0.0350 loss_scale: 64.0000 norm: 6.5503 norm_average: 6.4397 seconds: 25.111
+21:36:41: train iter: 6000 loss_net: 0.0291 loss_scale: 64.0000 norm: 4.7121 norm_average: 5.8255 seconds: 19.599
+21:37:02: train iter: 6100 loss_net: nan loss_scale: 51.8400 norm: nan norm_average: 5.4681 seconds: 21.367
+21:37:24: train iter: 6200 loss_net: 0.0306 loss_scale: 32.0000 norm: 4.8170 norm_average: 5.0717 seconds: 21.717
+21:37:50: train iter: 6300 loss_net: nan loss_scale: 22.7200 norm: nan norm_average: 5.0051 seconds: 25.971
+21:38:12: train iter: 6400 loss_net: 0.0282 loss_scale: 16.0000 norm: 5.5478 norm_average: 5.1943 seconds: 22.614
+21:38:34: train iter: 6500 loss_net: 0.0323 loss_scale: 16.0000 norm: 5.5234 norm_average: 5.6488 seconds: 21.745
+21:38:53: train iter: 6600 loss_net: 0.0258 loss_scale: 16.0000 norm: 4.6116 norm_average: 5.0640 seconds: 18.426
+21:39:14: train iter: 6700 loss_net: 0.0336 loss_scale: 16.0000 norm: 5.7732 norm_average: 5.1444 seconds: 21.897
+21:39:37: train iter: 6800 loss_net: 0.0271 loss_scale: 16.0000 norm: 4.4631 norm_average: 4.8898 seconds: 22.621
+21:40:00: train iter: 6900 loss_net: nan loss_scale: 10.4800 norm: nan norm_average: 5.0974 seconds: 23.348
+21:40:18: train iter: 7000 loss_net: 0.0379 loss_scale: 8.0000 norm: 6.2501 norm_average: 5.4170 seconds: 17.604
+21:40:40: train iter: 7100 loss_net: 0.0234 loss_scale: 8.0000 norm: 4.7630 norm_average: 5.4587 seconds: 21.855
+21:41:00: train iter: 7200 loss_net: 0.0261 loss_scale: 8.0000 norm: 5.7389 norm_average: 5.2098 seconds: 20.294
+21:41:21: train iter: 7300 loss_net: 0.0304 loss_scale: 8.0000 norm: 6.6300 norm_average: 6.2029 seconds: 21.146
+21:41:42: train iter: 7400 loss_net: 0.0385 loss_scale: 8.0000 norm: 6.0147 norm_average: 5.8532 seconds: 21.120
+21:42:02: train iter: 7500 loss_net: 0.0304 loss_scale: 8.0000 norm: 5.5341 norm_average: 5.8461 seconds: 19.520
+21:42:22: train iter: 7600 loss_net: nan loss_scale: 4.8000 norm: nan norm_average: 5.9262 seconds: 20.358
+21:42:43: train iter: 7700 loss_net: 0.0337 loss_scale: 4.0000 norm: 6.4580 norm_average: 6.0600 seconds: 20.708
+21:43:04: train iter: 7800 loss_net: 0.0309 loss_scale: 4.0000 norm: 5.4550 norm_average: 5.7803 seconds: 21.080
+21:43:23: train iter: 7900 loss_net: 0.0332 loss_scale: 4.0000 norm: 4.9611 norm_average: 5.2429 seconds: 18.867
+21:43:45: train iter: 8000 loss_net: 0.0249 loss_scale: 4.0000 norm: 4.7818 norm_average: 4.8709 seconds: 22.194
+21:44:04: train iter: 8100 loss_net: 0.0215 loss_scale: 4.0000 norm: 3.9981 norm_average: 4.5008 seconds: 18.829
+21:44:28: train iter: 8200 loss_net: 0.0291 loss_scale: 4.0000 norm: 4.9678 norm_average: 4.3233 seconds: 24.434
+21:44:49: train iter: 8300 loss_net: 0.0301 loss_scale: 4.0000 norm: 5.5914 norm_average: 5.0348 seconds: 20.401
+21:45:12: train iter: 8400 loss_net: 0.0314 loss_scale: 4.0000 norm: 4.6670 norm_average: 5.1135 seconds: 22.808
+21:45:32: train iter: 8500 loss_net: 0.0256 loss_scale: 4.0000 norm: 4.6257 norm_average: 4.6725 seconds: 20.029
+21:45:57: train iter: 8600 loss_net: 0.0343 loss_scale: 7.2000 norm: 6.5060 norm_average: 5.3333 seconds: 25.160
+21:46:20: train iter: 8700 loss_net: 0.0310 loss_scale: 8.0000 norm: 5.0923 norm_average: 5.5211 seconds: 23.070
+21:46:40: train iter: 8800 loss_net: 0.0294 loss_scale: 8.0000 norm: 5.0595 norm_average: 5.1408 seconds: 19.948
+21:47:00: train iter: 8900 loss_net: nan loss_scale: 2.9400 norm: nan norm_average: 5.2164 seconds: 20.036
+21:47:20: train iter: 9000 loss_net: 0.0271 loss_scale: 2.0000 norm: 5.3723 norm_average: 5.1530 seconds: 20.084
+21:47:38: train iter: 9100 loss_net: 0.0301 loss_scale: 2.0000 norm: 5.4216 norm_average: 5.1792 seconds: 18.327
+21:47:57: train iter: 9200 loss_net: 0.0339 loss_scale: 2.0000 norm: 6.1619 norm_average: 5.8363 seconds: 18.760
+21:48:19: train iter: 9300 loss_net: 0.0264 loss_scale: 2.0000 norm: 5.1479 norm_average: 5.4376 seconds: 21.675
+21:48:39: train iter: 9400 loss_net: 0.0275 loss_scale: 2.0000 norm: 4.7114 norm_average: 5.2092 seconds: 20.340
+21:49:01: train iter: 9500 loss_net: 0.0342 loss_scale: 2.0000 norm: 6.0717 norm_average: 5.3527 seconds: 21.842
+21:49:22: train iter: 9600 loss_net: 0.0233 loss_scale: 2.0000 norm: 4.4002 norm_average: 5.0910 seconds: 21.460
+21:49:41: train iter: 9700 loss_net: 0.0250 loss_scale: 2.0000 norm: 4.8491 norm_average: 4.7709 seconds: 18.375
+21:50:02: train iter: 9800 loss_net: 0.0338 loss_scale: 2.0000 norm: 6.0010 norm_average: 5.1744 seconds: 21.227
+21:50:23: train iter: 9900 loss_net: nan loss_scale: 2.2800 norm: nan norm_average: 4.9492 seconds: 21.390
+Creating snapshot...
+Model saved in file ./output/spine_localization/unet/d0_25_fin/train_all/2022-11-29_21-11-16/weights/ckpt-10000
+Testing...
+GL003
+GL016
+GL047
+GL090_CT-ax
+GL124_CT-ax
+GL240_CT-ax
+GL247
+GL295_CT-ax
+GL364_CT-ax
+GL453_CT-ax
+verse004
+verse005
+verse008
+verse015
+verse031
+verse033
+verse034
+verse056
+verse075
+verse082_CT-iso
+verse088
+verse091
+verse096
+verse097
+verse104_CT-iso
+verse111
+verse112_CT-iso
+verse113
+verse122
+verse127
+verse135
+verse139
+verse141
+verse145
+verse151
+verse254
+verse257
+verse401_verse201_CT-iso
+verse401_verse253_CT-iso
+verse402_verse202_CT-sag
+verse402_verse251_CT-sag
+verse403_verse208_CT-sag
+verse403_verse255_CT-sag
+verse405_verse212_CT-sag
+verse405_verse258_CT-sag
+verse405_verse259_CT-sag
+verse406_verse214_CT-sag
+verse406_verse261_CT-sag
+verse407_verse215_CT-sag
+verse407_verse262_CT-sag
+verse408_verse223_CT-iso
+verse408_verse265_CT-iso
+verse409_verse226_CT-iso
+verse409_verse266_CT-iso
+verse410_verse227_CT-iso
+verse410_verse267_CT-iso
+verse411_verse232_CT-iso
+verse411_verse270_CT-iso
+verse413_verse239_CT-iso
+verse413_verse272_CT-iso
+verse415_verse243_CT-sag
+verse415_verse275_CT-sag
+verse500
+verse503
+verse504
+verse506_CT-iso
+verse507
+verse510_CT-iso
+verse514
+verse518
+verse519_CT-iso
+verse521
+verse525
+verse527
+verse532
+verse533
+verse534
+verse535
+verse536
+verse537
+verse539_CT-iso
+verse541
+verse542_CT-iso
+verse544
+verse557
+verse561_CT-sag
+verse564_CT-iso
+verse565_CT-iso
+verse577_CT-iso
+verse581_CT-iso
+verse584
+verse586_CT-iso
+verse588_CT-sag
+verse593_CT-sag
+verse594
+verse596_CT-iso
+verse605_CT-sag
+verse619_CT-iso
+verse629_CT-iso
+verse631_CT-sag
+verse641_CT-iso
+verse642_CT-sag
+verse646_CT-iso
+verse807_CT-iso
+verse808_CT-iso
+verse811_CT-ax
+verse818_CT-iso
+verse820_CT-iso
+verse823_CT-iso
+verse824_CT-iso
+verse825_CT-iso
+verse833_CT-ax
+verse835_CT-iso
+21:55:14: test iter: 10000 seconds: 1312.101
