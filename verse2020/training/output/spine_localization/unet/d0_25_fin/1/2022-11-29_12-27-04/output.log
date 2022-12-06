@@ -1,0 +1,29 @@
+using pyro uri PYRO:verse2020_dataset@s2.uppmax.uu.se:52132
+loaded 39 ids
+loaded 39 ids
+Starting main loop
+Training parameters:
+Optimizer:  <tensorflow.python.keras.mixed_precision.experimental.loss_scale_optimizer.LossScaleOptimizer object at 0x2b753810bbe0>
+Batch size: 1
+Learning rate: <tensorflow.python.keras.optimizer_v2.learning_rate_schedule.ExponentialDecay object at 0x2b753810bb38>
+Max iterations: 10000
+Output folder: ./output/spine_localization/unet/d0_25_fin/1/2022-11-29_12-27-04
+12:27:21: train iter: 0 loss_net: 0.4183 loss_scale: 32768.0000 norm: inf norm_average: 10.0000 seconds: 14.139
+12:27:40: train iter: 100 loss_net: 0.5824 loss_scale: 1054.7200 norm: inf norm_average: 18.4626 seconds: 18.482
+12:27:59: train iter: 200 loss_net: 0.4901 loss_scale: 128.0000 norm: 50.3039 norm_average: 31.7646 seconds: 19.306
+12:28:21: train iter: 300 loss_net: 0.3756 loss_scale: 128.0000 norm: 41.6356 norm_average: 37.9282 seconds: 22.195
+12:28:42: train iter: 400 loss_net: nan loss_scale: 123.5200 norm: nan norm_average: 40.5581 seconds: 20.689
+12:29:02: train iter: 500 loss_net: 0.2312 loss_scale: 64.0000 norm: 40.5863 norm_average: 40.6244 seconds: 20.218
+12:29:24: train iter: 600 loss_net: 0.1874 loss_scale: 64.0000 norm: 31.5414 norm_average: 34.6751 seconds: 21.853
+12:29:45: train iter: 700 loss_net: 0.1698 loss_scale: 64.0000 norm: 28.2703 norm_average: 29.1246 seconds: 20.814
+12:30:08: train iter: 800 loss_net: 0.1486 loss_scale: 64.0000 norm: 26.7066 norm_average: 28.8545 seconds: 23.438
+12:30:29: train iter: 900 loss_net: nan loss_scale: 40.6400 norm: nan norm_average: 24.6618 seconds: 20.704
+12:30:50: train iter: 1000 loss_net: 0.1067 loss_scale: 32.0000 norm: 19.8218 norm_average: 21.5031 seconds: 21.124
+12:31:09: train iter: 1100 loss_net: 0.0960 loss_scale: 32.0000 norm: 18.8928 norm_average: 19.9446 seconds: 18.335
+12:31:29: train iter: 1200 loss_net: 0.0997 loss_scale: 32.0000 norm: 18.5349 norm_average: 18.4344 seconds: 20.516
+12:31:50: train iter: 1300 loss_net: 0.0839 loss_scale: 32.0000 norm: 14.8592 norm_average: 17.0323 seconds: 20.587
+12:32:09: train iter: 1400 loss_net: 0.0867 loss_scale: 32.0000 norm: 18.0485 norm_average: 16.9395 seconds: 19.554
+12:32:32: train iter: 1500 loss_net: 0.0694 loss_scale: 32.0000 norm: 15.3161 norm_average: 16.6480 seconds: 22.676
+12:32:52: train iter: 1600 loss_net: 0.0785 loss_scale: 32.0000 norm: 17.1029 norm_average: 15.6687 seconds: 20.515
+12:33:13: train iter: 1700 loss_net: 0.0628 loss_scale: 32.0000 norm: 11.5636 norm_average: 15.0152 seconds: 20.314
+12:33:32: train iter: 1800 loss_net: 0.0687 loss_scale: 32.0000 norm: 12.3087 norm_average: 12.7597 seconds: 18.979
