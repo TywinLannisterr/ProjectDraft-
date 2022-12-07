@@ -60,7 +60,7 @@ class MainLoop(MainLoopBase):
         if config.model == 'unet':
             self.network = Unet
 
-        self.evaluate_landmarks_postprocessing = True
+        self.evaluate_landmarks_postprocessing = False
         self.save_output_images = True
         self.save_debug_images = False
         self.image_folder = config.image_folder
