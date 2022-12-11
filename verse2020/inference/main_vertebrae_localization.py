@@ -38,6 +38,7 @@ class MainLoop(MainLoopBase):
         :param config: config dictionary
         """
         super().__init__()
+        print("CONFIG", config)
         gpu_available = tf.test.gpu_device_name() != ''
         self.use_mixed_precision = gpu_available
         if self.use_mixed_precision:
@@ -110,6 +111,7 @@ class MainLoop(MainLoopBase):
 
         dataset = Dataset(**dataset_parameters)
         self.dataset_val = dataset.dataset_val()
+        
         self.network_image_size = list(reversed(self.image_size))
 
     def call_model(self, image):
@@ -246,9 +248,12 @@ class MainLoop(MainLoopBase):
                 print(current_id)
                 datasources = dataset_entry['datasources']
                 input_image = datasources['image']
-
+                
                 image, prediction, prediction_local, prediction_spatial, transformation = self.test_cropped_image(dataset_entry)
-
+                print(prediction)
+                print(prediction_local)
+                print(prediction_spatial)
+                print(transformation)
                 origin = transformation.TransformPoint(np.zeros(3, np.float64))
                 if self.save_output_images:
                     heatmap_normalization_mode = (-1, 1)
