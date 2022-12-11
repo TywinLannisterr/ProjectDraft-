@@ -250,10 +250,6 @@ class MainLoop(MainLoopBase):
                 input_image = datasources['image']
                 
                 image, prediction, prediction_local, prediction_spatial, transformation = self.test_cropped_image(dataset_entry)
-                print(prediction)
-                print(prediction_local)
-                print(prediction_spatial)
-                print(transformation)
                 origin = transformation.TransformPoint(np.zeros(3, np.float64))
                 if self.save_output_images:
                     heatmap_normalization_mode = (-1, 1)
@@ -265,6 +261,7 @@ class MainLoop(MainLoopBase):
                     utils.io.image.write_multichannel_np(prediction_spatial, self.output_folder_handler.path('output', current_id + '_prediction_spatial.mha'), output_normalization_mode=heatmap_normalization_mode, sitk_image_output_mode='vector', data_format=self.data_format, image_type=image_type, spacing=self.image_spacing, origin=origin)
 
                 local_maxima_landmarks = heatmap_maxima.get_landmarks(prediction, input_image, self.image_spacing, transformation)
+                print(local_maxima_landmarks)
                 curr_landmarks_no_postprocessing = [l[0] if len(l) > 0 else Landmark(coords=[np.nan] * 3, is_valid=False)  for l in local_maxima_landmarks]
                 landmarks_no_postprocessing[current_id] = curr_landmarks_no_postprocessing
 
