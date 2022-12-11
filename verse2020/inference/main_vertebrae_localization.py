@@ -227,7 +227,7 @@ class MainLoop(MainLoopBase):
                                      return_multiple_maxima=True,
                                      min_max_value=0.05,
                                      smoothing_sigma=2.0)
-
+        print(heatmap_maxima)
         with open('possible_successors.pickle', 'rb') as f:
             possible_successors = pickle.load(f)
         with open('units_distances.pickle', 'rb') as f:
@@ -259,10 +259,7 @@ class MainLoop(MainLoopBase):
                     utils.io.image.write_multichannel_np(prediction, self.output_folder_handler.path('output', current_id + '_prediction_rgb.mha'), output_normalization_mode=(0, 1), channel_layout_mode='channel_rgb', sitk_image_output_mode='vector', data_format=self.data_format, image_type=image_type, spacing=self.image_spacing, origin=origin)
                     utils.io.image.write_multichannel_np(prediction_local, self.output_folder_handler.path('output', current_id + '_prediction_local.mha'), output_normalization_mode=heatmap_normalization_mode, sitk_image_output_mode='vector', data_format=self.data_format, image_type=image_type, spacing=self.image_spacing, origin=origin)
                     utils.io.image.write_multichannel_np(prediction_spatial, self.output_folder_handler.path('output', current_id + '_prediction_spatial.mha'), output_normalization_mode=heatmap_normalization_mode, sitk_image_output_mode='vector', data_format=self.data_format, image_type=image_type, spacing=self.image_spacing, origin=origin)
-                print(prediction)
-                print(input_image)
-                print(self.image_spacing)
-                
+
                 local_maxima_landmarks = heatmap_maxima.get_landmarks(prediction, input_image, self.image_spacing, transformation)
                 
                 curr_landmarks_no_postprocessing = [l[0] if len(l) > 0 else Landmark(coords=[np.nan] * 3, is_valid=False)  for l in local_maxima_landmarks]
