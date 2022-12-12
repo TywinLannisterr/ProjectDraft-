@@ -225,7 +225,7 @@ class MainLoop(MainLoopBase):
         heatmap_maxima = HeatmapTest(channel_axis,
                                      False,
                                      return_multiple_maxima=True,
-                                     min_max_value=0.05,
+                                     min_max_value=0.00000005,
                                      smoothing_sigma=2.0)
         print(heatmap_maxima)
         with open('possible_successors.pickle', 'rb') as f:
